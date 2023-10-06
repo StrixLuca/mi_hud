@@ -1,2 +1,2 @@
-# mi_hud
- M.I. Hud resource
+# fivem_script_template
+For the use of creating scripts
