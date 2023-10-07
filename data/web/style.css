@@ -3,33 +3,64 @@ body {
     margin: 0;
 }
 
-#voice_frame {
+/* voice frame */
+#indic_frame {
     position:fixed;
     overflow: hidden;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     bottom: 0;
 }
 
-.voice_icon {
+.icon {
     position: relative;
     margin: 4px;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    border-radius: 35%;
     background: rgb(50, 50, 50);
 }
 
-.voice_icon i {
-    color: white;
+.icon i {
     position: absolute;
-    font-size: 20px;
+    font-size: 16px;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
 }
 
-.bar_frame_outer {
+#sick {
+    color: yellowgreen;
+}
+
+#drugs {
+    color: aqua;
+}
+
+#bone {
+    color: lightcoral;
+}
+
+#voice {
+    color: white;
+}
+
+/* status frame */
+#status_frame {
+    position:fixed;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    left: 65px;
+    bottom: 10px;
+}
+
+#status_frame_bottom {
+    left: 65px;
+    bottom: 10px;
+}
+
+.status_bar {
     background-color: #ccc;
     height: 15px;
     width: 150px;
@@ -37,15 +68,7 @@ body {
     border: solid 1px #aaa;
 }
 
-.bar_frame_inner {
-    background-color: #aaa;
-    height: 15px;
-    width: 150px;
-    margin: 0 auto;
+#health {
 
-    color: #ccc;
-    text-align: left;
-    font-family: sans-serif;
-    line-height: 0.95;
-    font-weight: bold;
 }
+
