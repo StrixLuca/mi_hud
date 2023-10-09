@@ -3,72 +3,115 @@ body {
     margin: 0;
 }
 
-/* voice frame */
-#indic_frame {
+/* main player view */
+#frame_main {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    margin: 0;
+}
+
+/* INDICATORS: frame */
+#frame_indicators {
     position:fixed;
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    bottom: 0;
+    bottom: 100px;
 }
 
-.icon {
+.indicators_icon {
     position: relative;
-    margin: 4px;
-    width: 40px;
-    height: 40px;
-    border-radius: 35%;
+    margin-top: 25px;
+    margin-left: 15px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
     background: rgb(50, 50, 50);
 }
 
-.icon i {
+.indicators_icon i {
     position: absolute;
-    font-size: 16px;
+    font-size: 25px;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
 }
 
-#sick {
+/* INDICATORS: detail-illness */
+#icon_illness {
+    border: 5px solid yellowgreen;
+}
+#indicator_illness {
+    font-size: 30px;
+    text-shadow: -1px 1px 15px green;
     color: yellowgreen;
 }
 
-#drugs {
-    color: aqua;
+/* INDICATORS: detail-pills */
+#icon_pills {
+    border: 5px solid #5DADE2;
+}
+#indicator_pills {
+    font-size: 30px;
+    text-shadow: -1px 1px 15px #2471A3;
+    color: #5DADE2;
 }
 
-#bone {
-    color: lightcoral;
+/* INDICATORS: detail-bone */
+#icon_bone {
+    border: 5px solid #F5B041;
+}
+#indicator_bone {
+    font-size: 30px;
+    text-shadow: -1px 1px 15px #D35400;
+    color: #F5B041;
 }
 
-#voice {
-    color: white;
+/* INDICATORS: detail-bleed */
+#icon_bleed {
+    border: 5px solid #EC7063;
+}
+#indicator_bleed {
+    font-size: 30px;
+    text-shadow: -1px 1px 15px #A93226;
+    color: #EC7063;
 }
 
-/* status frame */
-#status_frame {
+
+
+
+/* VOICE: frame */
+#frame_voice {
     position:fixed;
     overflow: hidden;
     display: flex;
-    flex-direction: row;
-    left: 65px;
     bottom: 10px;
 }
 
-#status_frame_bottom {
-    left: 65px;
-    bottom: 10px;
+.voice_icon {
+    position: relative;
+    margin-top: 25px;
+    margin-left: 15px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: rgb(50, 50, 50);
 }
 
-.status_bar {
-    background-color: #ccc;
-    height: 15px;
-    width: 150px;
-    margin: 0 auto;
-    border: solid 1px #aaa;
+.voice_icon i {
+    position: absolute;
+    font-size: 25px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 
-#health {
-
+#icon_voice {
+    border: 5px solid #AEB6BF
 }
-
+#indicator_voice {
+    font-size: 30px;
+    text-shadow: -1px 1px 10px #BDC3C7;
+    color: #AEB6BF;
+}

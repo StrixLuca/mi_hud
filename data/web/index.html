@@ -12,38 +12,41 @@
     </head>
 
     <body>
-        <!-- entire ui frame -->
-        <div id="frame_ui">
+        <!-- ui screen frame -->
+        <div id="frame_main">
 
-                <!-- voice bar: bottom left -->
-                <div id="indic_frame">
-                    <!-- icon: voice -->
-                    <div id="sick" class="icon">
-                        <i class="fa-solid fa-viruses"></i>
-                    </div>
+            <div id="frame_indicators">
 
-                    <div id="drugs" class="icon">
-                        <i class="fa-solid fa-pills"></i>
-                    </div>
-
-                    <div id="bone" class="icon">
-                        <i class="fa-solid fa-bone"></i>
-                    </div>
-
-                    <div id="voice" class="icon">
-                        <i class="fa-solid fa-microphone"></i>
-                    </div>
-                    
+                <div id="icon_illness" class="indicators_icon">
+                    <i id="indicator_illness" class="fa-solid fa-viruses"></i>
                 </div>
-                <!-- status bar: bottom left -->
-                <div id="status_frame">
-                    <div id="status_frame_bottom">
-                        <div id="health" class="status_bar">
-                        
-                        </div>
-                    </div>
+
+                <div id="icon_pills" class="indicators_icon">
+                    <i id="indicator_pills" class="fa-solid fa-pills"></i>
                 </div>
+
+                <div id="icon_bone" class="indicators_icon">
+                    <i id="indicator_bone" class="fa-solid fa-bone"></i>
+                </div>
+
+                <div id="icon_bleed" class="indicators_icon">
+                    <i id="indicator_bleed" class="fa-solid fa-droplet"></i>
+                </div>
+    
             </div>
+
+            <div id="frame_voice">
+                
+                <div id="icon_voice" class="voice_icon">
+                    <i id="indicator_voice" class="fa-solid fa-microphone"></i>
+                </div>
+
+            </div>
+
+            <div id="frame_status">
+                
+            </div>
+
         </div>
     </body>
 </html>
