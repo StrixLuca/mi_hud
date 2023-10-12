@@ -1,9 +1,20 @@
         --[[    client bridge file: esx    ]]--
 -- client methods to adapt to the named framework
 ------------------------------------------------------------
--- docs reference: https://documentation.esx-framework.org
+if GetResourceState('es_extended') ~= 'started' then return end
 
--- framework variables
+ESX = exports.es_extended:getSharedObject()
+
+function Notify(text)
+	ESX.ShowNotification(text)
+end
+
+
+
+function ServerCallback(name, cb, ...)
+    ESX.TriggerServerCallback(name, cb,  ...)
+end
+
 ----------------------------------------
 
 
