@@ -5,7 +5,8 @@ Hud for qb-core | esx | ox_core
 Project is not finished yet
 
 
-#Discord
+# Discord
+
 https://discord.gg/g4jaGdS2yX
 
 # Preview
